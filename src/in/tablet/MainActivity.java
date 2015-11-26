@@ -1,5 +1,7 @@
 package in.tablet;
 
+import com.shared.Shared;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,6 +13,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		Shared shared=new Shared("Tablet Product");
+		System.out.println(shared);
 	}
 
 	@Override
